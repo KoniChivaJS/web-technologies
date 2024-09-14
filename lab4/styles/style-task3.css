@@ -1,0 +1,36 @@
+main {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 26px;
+}
+a {
+  color: purple;
+}
+
+.menu-item {
+  color: green;
+}
+
+.berries {
+  list-style: square;
+}
+
+.vegetables {
+  list-style: circle;
+}
+
+/* ul li ul {
+  list-style: none;
+} */
+
+.berries a {
+  text-decoration: none;
+}
+.other li {
+  list-style: decimal;
+}

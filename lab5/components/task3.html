@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/style-task3.css" />
+  </head>
+  <body>
+    <main class="container">
+      <a href="../index.html">BACK</a>
+      <form action="" method="post" enctype="multipart/form-data">
+        <fieldset tabindex="1">
+          <legend>Особиста інформація</legend>
+
+          <label for="name">Ім'я</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Ваше ім'я"
+            maxlength="20"
+            required
+          />
+          <br />
+
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Ваш Email"
+            pattern="[a-z0-9._]+@[a-z0-9.-]+\.[a-z]{2,}$"
+            autocomplete="off"
+            required
+          />
+          <br />
+          <label for="phone">Телефон</label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="Ваш телефон"
+            pattern="(?=.*+[0-9]{3}\s?[0-9]{2}\s?[0-9]{3}\s?[0-9]{4,5}$)"
+          />
+          <br />
+
+          <div class="radio-btns">
+            <label for="gender">Стать</label>
+            <div class="radio-sel">
+              <input
+                type="radio"
+                id="gender"
+                name="gender"
+                value="male"
+                required
+              />
+              <label for="gender">Чоловік</label>
+            </div>
+            <div class="radio-sel">
+              <input
+                type="radio"
+                id="gender"
+                name="gender"
+                value="female"
+                required
+              />
+              <label for="gender">Жінка</label>
+            </div>
+            <div class="radio-sel">
+              <input
+                type="radio"
+                id="gender"
+                name="gender"
+                value="other"
+                required
+              />
+              <label for="gender">Інший..</label>
+            </div>
+          </div>
+
+          <br />
+          <label for="date">Дата народження</label>
+          <input
+            type="date"
+            id="date"
+            name="date"
+            placeholder="Ваша дата народження"
+            required
+          />
+          <br />
+          <label for="city">Ваше місто</label>
+          <select id="city" name="city">
+            <option value="Kyiv" selected>Київ</option>
+            <option value="Lviv">Львів</option>
+            <option value="Chernivtsi">Чернівці</option>
+            <option value="Ternopul">Тернопіль</option>
+            <option value="Kharkiv">Харків</option>
+          </select>
+          <br />
+          <label for="file">Фото</label>
+          <input type="file" id="file" name="file" required />
+          <br />
+          <label for="agree">Згоден</label>
+          <input type="checkbox" id="agree" />
+        </fieldset>
+
+        <fieldset tabindex="2">
+          <legend>Пароль</legend>
+          <label for="password">Пароль</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Ваш пароль"
+            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}"
+            required
+          />
+          <br />
+        </fieldset>
+        <fieldset tabindex="3">
+          <legend>Освіта</legend>
+          <div class="radio-btns">
+            <label for="study">Школа</label>
+            <input
+              type="radio"
+              id="study"
+              name="study"
+              value="school"
+              required
+            />
+
+            <div class="radio-sel">
+              <label for="study">Університет</label>
+              <input type="radio" id="study" name="study" value="university" />
+            </div>
+            <div class="radio-sel">
+              <label for="study">Інше</label>
+              <input type="radio" id="study" name="study" value="other" />
+            </div>
+          </div>
+          <br />
+        </fieldset>
+
+        <fieldset tabindex="4">
+          <legend>Жанри музики</legend>
+          <label for="genres">
+            <select id="genres" name="genres" multiple>
+              <option value="hip-hop">Хіп-хоп</option>
+              <option value="djaz">Джаз</option>
+              <option value="clasic">Класика</option>
+              <option value="pop">Поп</option>
+              <option value="rock">Рок</option>
+            </select>
+          </label>
+          <br />
+          <label for="other-music">Інший тип: </label>
+          <textarea
+            id="other_music"
+            name="other_music"
+            placeholder="Введіть тип музики..."
+          ></textarea>
+        </fieldset>
+
+        <fieldset tabindex="5">
+          <legend>Мова програмування</legend>
+
+          <label for="p_language">Виберіть улюблену мову програмування </label>
+          <input
+            list="language_options"
+            name="p_language"
+            id="p_language"
+            placeholder="Оберіть мову "
+          />
+          <datalist id="language_options">
+            <option value="C++"></option>
+            <option value="Python"></option>
+            <option value="JS"></option>
+            <option value="TS"></option>
+            <option value="PHP :("></option>
+            <option value="JAVA"></option>
+          </datalist>
+
+          <br />
+        </fieldset>
+
+        <br />
+
+        <button type="submit">Відправити</button>
+        <button type="reset">Скинути</button>
+      </form>
+    </main>
+  </body>
+</html>

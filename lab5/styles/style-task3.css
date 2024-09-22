@@ -1,0 +1,83 @@
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+* {
+  background-color: #bbbbbb;
+}
+fieldset {
+  background-color: #ffffff;
+  border-radius: 15px;
+  border: 1px solid #ced4da;
+  margin-bottom: 20px;
+  padding: 15px;
+  width: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+legend {
+  background-color: rgb(90, 7, 180);
+  color: white;
+  border-radius: 15px;
+  padding: 15px;
+}
+label {
+  display: block;
+  font-weight: bold;
+  background-color: white;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+p {
+  font-weight: bold;
+  background-color: white;
+}
+
+input,
+select,
+textarea {
+  background-color: #e9ecef;
+  border: 1px solid #ced4da;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+input:hover,
+select:hover,
+textarea:hover {
+  background-color: rgb(221, 189, 255);
+}
+
+button {
+  background-color: rgb(90, 7, 180);
+  color: white;
+  padding: 20px;
+  border: none;
+  outline: none;
+  border-radius: 15px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgb(221, 189, 255);
+}
+
+.radio-btns {
+  display: flex;
+  flex-direction: column;
+  background-color: transparent;
+}
+.radio-sel {
+  display: flex;
+  background-color: transparent;
+}

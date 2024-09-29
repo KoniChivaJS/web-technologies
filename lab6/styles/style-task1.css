@@ -1,0 +1,24 @@
+.info-list {
+  display: flex;
+  list-style: none;
+  overflow: hidden;
+}
+.info-list-item {
+  padding: 20px;
+  border-right: 5px dotted rgb(255, 123, 0);
+}
+
+.info-list-item:last-child {
+  border-right: none;
+}
+
+.info-img-left {
+  width: 200px;
+  float: left;
+  margin: 10px;
+}
+.info-img-right {
+  width: 200px;
+  float: right;
+  margin: 10px;
+}

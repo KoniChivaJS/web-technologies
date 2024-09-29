@@ -1,0 +1,70 @@
+.block-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.block {
+  width: 300px;
+  padding: 10px;
+  margin: 10px;
+}
+.first {
+  border: 5px solid green;
+  border-radius: 16px;
+}
+.second {
+  border: 5px solid green;
+  border-radius: 50px 0px 50px 0px;
+}
+.third {
+  border: 5px solid green;
+  border-radius: 10px 50% 10px 50%;
+}
+.fourth {
+  border: 25px solid green;
+  border-color: greenyellow green;
+  border-radius: 20em/5em;
+}
+.fifth {
+  border: 25px solid green;
+  border-color: green greenyellow;
+  border-radius: 30% 5% 30% 5%;
+}
+.sixth {
+  border: 25px solid green;
+  border-color: greenyellow greenyellow greenyellow green;
+  border-radius: 0 0 100% 0;
+}
+
+.seventh {
+  border: 20px solid #fff;
+  border-image-source: url("../assets/border_1.png");
+  border-image-slice: 50;
+}
+
+.eights {
+  border: 20px solid #fff;
+  border-image-source: url("../assets/border_2.png");
+  border-image-slice: 50;
+}
+.ninth {
+  border: 20px solid #fff;
+  border-image-source: url("../assets/border_3.png");
+  border-image-slice: 40;
+}
+.tenth {
+  border: 20px solid #fff;
+  border-image-source: url("../assets/border_4.png");
+  border-image-slice: 30;
+}
+.eleventh {
+  border: 20px solid #fff;
+  border-image-source: url("../assets/border_5.png");
+  border-image-slice: 40;
+}
+.twelfth {
+  border: 20px solid #fff;
+  border-image-source: url("../assets/border_6.png");
+  border-image-slice: 30;
+}

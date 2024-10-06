@@ -1,0 +1,45 @@
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+main div {
+  width: 250px;
+  height: 300px;
+  margin: 30px;
+  border: 2px solid green;
+}
+
+main div img {
+  width: 100%;
+  height: 160px;
+}
+
+.block-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.first {
+  box-shadow: -10px -10px 7px 5px green;
+}
+.second {
+  box-shadow: 0 0 15px 7px green;
+}
+.third {
+  box-shadow: 5px 5px 10px green;
+}
+.fourth {
+  box-shadow: 0 0 30px green;
+}
+.fifth {
+  box-shadow: inset 0 5px green, inset 0 -5px yellow, inset 5px 0 red,
+    inset -5px 0 blue;
+  padding: 5px;
+}
+.sixth {
+  border: 1px solid green;
+  padding: 10px;
+  box-shadow: green 0 10px 0 -5px, orange 0 -10px 0 -5px;
+}

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="../styles/style.css" />
-    <link rel="stylesheet" href="../styles/style-task1.css" />
+    <link rel="stylesheet" href="../styles/style-task3.css" />
   </head>
   <body>
     <div class="container">
@@ -25,7 +25,62 @@
           </div>
         </div>
       </div>
-      <main></main>
+      <main>
+        <form class="form">
+          <h1 class="title">Заповніть форму</h1>
+
+          <h1 class="hide-title">Ми вдячні вам</h1>
+
+          <div class="data"></div>
+          <fieldset tabindex="1" class="field top1">
+            <label for="login">Login</label><br />
+            <input type="text" id="login" class="text-input" required />
+          </fieldset>
+
+          <fieldset tabindex="2" class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" class="text-input" required />
+          </fieldset>
+
+          <fieldset tabindex="3" class="field">
+            <label for="password">Password</label>
+            <input
+              type="password"
+              id="password"
+              class="password-input"
+              required
+            />
+          </fieldset>
+
+          <fieldset tabindex="4" class="field">
+            <label for="r-password">Repeat password</label>
+            <input
+              type="password"
+              id="r-password"
+              class="password-input"
+              required
+            />
+          </fieldset>
+
+          <fieldset tabindex="5" class="field">
+            <label for="first-name">First name</label><br />
+            <input type="text" id="first-name" class="text-input" required />
+          </fieldset>
+
+          <fieldset tabindex="6" class="field">
+            <label for="last-name">Last name</label><br />
+            <input type="text" id="last-name" class="text-input" required />
+          </fieldset>
+
+          <fieldset tabindex="7" class="about-field">
+            <label for="about">About me</label><br />
+            <textarea id="about" class="about"></textarea>
+          </fieldset>
+
+          <button type="submit" class="button submit">OK</button>
+          <button type="reset" class="button reset">Reset</button>
+        </form>
+      </main>
     </div>
   </body>
 </html>

@@ -109,21 +109,21 @@ label {
 }
 
 .text-input:hover {
-  padding-bottom: 4px;
+  /* padding-bottom: 4px; */
   color: #fbff00;
 }
 
 .text-input:focus {
-  padding-bottom: 4px;
+  /* padding-bottom: 4px; */
   color: #ffa600;
 }
 
 .password-input:hover {
-  padding-bottom: 4px;
+  /* padding-bottom: 4px; */
   color: #1eff00;
 }
 .password-input:focus {
-  padding-bottom: 4px;
+  /* padding-bottom: 4px; */
   color: #00ffea;
 }
 
@@ -195,7 +195,7 @@ label {
   height: 2px;
   width: 30%;
   position: absolute;
-  top: 15%;
+  top: 25%;
   left: 35%;
 }
 .reset:active:before {

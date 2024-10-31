@@ -1,0 +1,138 @@
+.parent {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+  gap: 8px;
+}
+.parent div {
+  background-color: rgb(204, 204, 85);
+  color: white;
+  font-size: 24px;
+  text-align: center;
+}
+.parent .div1 {
+  grid-row: span 12/span 12;
+}
+.parent .div2 {
+  grid-row: span 6/span 6;
+}
+.parent .div3 {
+  grid-row: span 6/span 6;
+  grid-column-start: 2;
+  grid-row-start: 7;
+}
+.parent .div4 {
+  grid-row: span 4/span 4;
+  grid-column-start: 3;
+  grid-row-start: 1;
+}
+.parent .div5 {
+  grid-row: span 4/span 4;
+  grid-column-start: 3;
+  grid-row-start: 5;
+}
+.parent .div6 {
+  grid-row: span 4/span 4;
+  grid-column-start: 3;
+  grid-row-start: 9;
+}
+.parent .div7 {
+  grid-row: span 3/span 3;
+  grid-column-start: 4;
+  grid-row-start: 1;
+}
+.parent .div8 {
+  grid-row: span 3/span 3;
+  grid-column-start: 4;
+  grid-row-start: 4;
+}
+.parent .div9 {
+  grid-row: span 3/span 3;
+  grid-column-start: 4;
+  grid-row-start: 7;
+}
+.parent .div10 {
+  grid-row: span 3/span 3;
+  grid-column-start: 4;
+  grid-row-start: 10;
+}
+.parent .div11 {
+  grid-row: span 2/span 2;
+  grid-column-start: 5;
+  grid-row-start: 1;
+}
+.parent .div12 {
+  grid-row: span 2/span 2;
+  grid-column-start: 5;
+  grid-row-start: 3;
+}
+.parent .div13 {
+  grid-row: span 2/span 2;
+  grid-column-start: 5;
+  grid-row-start: 5;
+}
+.parent .div14 {
+  grid-row: span 2/span 2;
+  grid-column-start: 5;
+  grid-row-start: 7;
+}
+.parent .div15 {
+  grid-row: span 2/span 2;
+  grid-column-start: 5;
+  grid-row-start: 9;
+}
+.parent .div16 {
+  grid-row: span 2/span 2;
+  grid-column-start: 5;
+  grid-row-start: 11;
+}
+.parent .div17 {
+  grid-column-start: 6;
+  grid-row-start: 1;
+}
+.parent .div18 {
+  grid-column-start: 6;
+  grid-row-start: 2;
+}
+.parent .div19 {
+  grid-column-start: 6;
+  grid-row-start: 3;
+}
+.parent .div20 {
+  grid-column-start: 6;
+  grid-row-start: 4;
+}
+.parent .div21 {
+  grid-column-start: 6;
+  grid-row-start: 5;
+}
+.parent .div22 {
+  grid-column-start: 6;
+  grid-row-start: 6;
+}
+.parent .div23 {
+  grid-column-start: 6;
+  grid-row-start: 7;
+}
+.parent .div24 {
+  grid-column-start: 6;
+  grid-row-start: 8;
+}
+.parent .div25 {
+  grid-column-start: 6;
+  grid-row-start: 9;
+}
+.parent .div26 {
+  grid-column-start: 6;
+  grid-row-start: 10;
+}
+.parent .div27 {
+  grid-column-start: 6;
+  grid-row-start: 11;
+}
+.parent .div28 {
+  grid-column-start: 6;
+  grid-row-start: 12;
+}
+
+/*# sourceMappingURL=style-task6.css.map */

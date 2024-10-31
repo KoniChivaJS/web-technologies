@@ -1,0 +1,240 @@
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+html {
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+}
+html p,
+html h2,
+html h3 {
+  color: rgb(107, 107, 107);
+}
+
+header {
+  width: 100%;
+  max-width: 1200px;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+header img {
+  height: 50px;
+}
+header .nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  width: 50%;
+  height: 100%;
+}
+header .nav p {
+  cursor: pointer;
+}
+header .nav img {
+  width: 40px;
+  height: 40px;
+}
+
+.banner {
+  margin: 100px 0;
+}
+
+.catalog {
+  width: 100%;
+  height: auto;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+}
+.catalog .catalog-header {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.catalog .catalog-header .catalog-btn {
+  background-color: rgb(250, 68, 68);
+  color: #fff;
+  outline: none;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  height: 100%;
+}
+.catalog .catalog-items {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.catalog .catalog-items .catalog-item {
+  width: 30%;
+  height: 300px;
+}
+.catalog .catalog-items .catalog-item > img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-block {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.contact-block .contact-btn {
+  background-color: rgb(250, 68, 68);
+  color: #fff;
+  outline: none;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  height: 50px;
+  display: flex;
+  gap: 10px;
+}
+.contact-block .contact-btn img {
+  width: 30px;
+}
+
+.works-block {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+.works-block .works {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.works-block .works .works-item {
+  display: flex;
+  flex-direction: column;
+  width: 23%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.works-block .works .works-item img {
+  width: 50%;
+}
+
+.journal-block {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+.journal-block .journals {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.journal-block .journals .journal-item {
+  display: flex;
+  width: 45%;
+  margin: 10px;
+}
+.journal-block .journals .journal-item img {
+  width: 250px;
+}
+.journal-block .journals .journal-item .journal-info {
+  margin-left: 10px;
+}
+
+footer {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #1e1e1e;
+}
+
+@media (max-width: 768px) {
+  .catalog-item {
+    width: 45%;
+  }
+  .works-item {
+    width: 45%;
+  }
+  .journal-item {
+    width: 90%;
+  }
+  .nav > p {
+    display: none;
+    flex-direction: column;
+  }
+  .burger-menu {
+    display: flex;
+  }
+}
+@media (max-width: 576px) {
+  .catalog-item {
+    width: 90%;
+  }
+  .works-item {
+    width: 90%;
+  }
+  .journal-item {
+    flex-direction: column;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.burger-menu {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+.burger-menu span {
+  width: 30px;
+  height: 4px;
+  background: orange;
+  margin: 4px;
+  transition: 0.3s;
+}
+
+/*# sourceMappingURL=style-task2.css.map */

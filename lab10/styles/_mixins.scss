@@ -1,0 +1,17 @@
+@mixin flex-center($direction: row) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin button-styles($bg-color, $text-color) {
+  background-color: $bg-color;
+  color: $text-color;
+  outline: none;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+}

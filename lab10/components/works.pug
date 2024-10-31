@@ -1,0 +1,12 @@
+include ./mixins.pug
+
+.works-block
+  h3 WHAT WE DO
+    span(style="color: red") --
+  p Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+
+  .works
+    +workItem('WEB DESIGN', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.')
+    +workItem('GRAPHIC DESIGN', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.')
+    +workItem('MOTION VIDEO', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.')
+    +workItem('BRAND STRATEGY', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.')

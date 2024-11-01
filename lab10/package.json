@@ -10,6 +10,7 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "pug": "^3.0.3",
     "sass": "^1.80.5",
     "scss": "^0.2.4"
   }

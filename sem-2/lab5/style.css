@@ -1,0 +1,122 @@
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 100px;
+}
+
+/* task 1 */
+.lamp-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.container button {
+  width: 100px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: yellow;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 0;
+}
+.btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.container select {
+  width: 200px;
+  height: 50px;
+  text-align: center;
+  font-size: 20px;
+  border-radius: 10px;
+  background-color: yellow;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 0;
+}
+.lamp {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 20px auto;
+  background-color: gray;
+  box-shadow: none;
+  transition: all 0.3s ease;
+}
+.on {
+  box-shadow: 0 0 30px 10px yellow;
+}
+.type-default {
+  background-color: yellow;
+}
+.type-energy {
+  background-color: lightgreen;
+}
+.type-led {
+  background-color: lightblue;
+}
+
+/* task 2 */
+.traffic-light {
+  width: 100px;
+  background: #333;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 30px auto;
+}
+.light {
+  width: 80px;
+  height: 80px;
+  background: #111;
+  border-radius: 50%;
+  margin: 10px auto;
+  transition: background 0.5s ease;
+}
+.red.on {
+  background: red;
+}
+.yellow.on {
+  background: yellow;
+}
+.green.on {
+  background: green;
+}
+
+#stateText {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* task 3 */
+
+#clock {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+#countdown,
+#birthdayResult {
+  margin-top: 20px;
+  font-size: 18px;
+}
+.blink {
+  opacity: 1;
+  animation: blink 1s steps(1) infinite;
+}
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+#calendar {
+  margin-top: 20px;
+}

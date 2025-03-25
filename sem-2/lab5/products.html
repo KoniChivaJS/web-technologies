@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="products.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Інтернет-магазин</h2>
+
+      <div class="btns">
+        <button onclick="addProduct()">Додати продукт</button>
+        <button onclick="removeProduct()">Видалити продукт</button>
+        <button onclick="updateProduct()">Оновити продукт</button>
+        <button onclick="searchProduct()">Пошук продукту</button>
+        <button onclick="makeOrder()">Замовити продукт</button>
+      </div>
+
+      <div id="productList"></div>
+    </div>
+
+    <script src="products.js"></script>
+  </body>
+</html>

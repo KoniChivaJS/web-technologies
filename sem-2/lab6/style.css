@@ -1,0 +1,238 @@
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f0f2f5;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+header {
+  background-color: #0077cc;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  margin: 0;
+}
+
+#total-price {
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+main {
+  padding: 30px 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+#filters,
+#sorters {
+  margin-bottom: 25px;
+  padding: 15px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+#filters h2,
+#sorters h2 {
+  margin-top: 0;
+}
+
+#filter-buttons button,
+#sorters button,
+#reset-filter,
+#reset-sort,
+#add-product-btn {
+  background-color: #0077cc;
+  border: none;
+  color: white;
+  padding: 8px 14px;
+  margin: 5px 5px 5px 0;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+#filter-buttons button:hover,
+#sorters button:hover,
+#reset-filter:hover,
+#reset-sort:hover,
+#add-product-btn:hover {
+  background-color: #005fa3;
+}
+
+#empty-message {
+  text-align: center;
+  color: #888;
+  font-style: italic;
+  margin: 30px 0;
+}
+
+#product-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.product-card {
+  width: 240px;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  transition: transform 0.2s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-4px);
+}
+
+.product-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin: 10px 0;
+}
+
+.product-card h3 {
+  margin: 5px 0;
+}
+
+.product-card button {
+  background-color: #ff6b6b;
+  border: none;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 5px;
+  margin-right: 5px;
+}
+
+.product-card button:hover {
+  background-color: #e04d4d;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.modal.hidden {
+  display: none;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  width: 320px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+.modal-content h2 {
+  margin-top: 0;
+  text-align: center;
+}
+
+.modal-content label {
+  display: block;
+  margin: 10px 0;
+  font-size: 14px;
+}
+
+.modal-content input,
+.modal-content select {
+  width: 100%;
+  padding: 7px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.modal-actions button {
+  flex: 1;
+  margin: 0 5px;
+  padding: 8px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.modal-actions button:first-child {
+  background-color: #28a745;
+  color: white;
+}
+
+.modal-actions button:first-child:hover {
+  background-color: #218838;
+}
+
+.modal-actions button:last-child {
+  background-color: #dc3545;
+  color: white;
+}
+
+.modal-actions button:last-child:hover {
+  background-color: #c82333;
+}
+
+.toast {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #333;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 1000;
+}
+
+.toast.show {
+  opacity: 1;
+}
+
+@media (max-width: 600px) {
+  main {
+    padding: 20px 10px;
+  }
+
+  #product-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product-card {
+    width: 95%;
+  }
+
+  .modal-content {
+    width: 90%;
+  }
+}

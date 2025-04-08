@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Список товарів</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Список товарів</h1>
+      <div id="total-price">Загальна вартість: 0 грн</div>
+    </header>
+
+    <main>
+      <section id="filters">
+        <h2>Фільтри:</h2>
+        <div id="filter-buttons"></div>
+        <button id="reset-filter">Скинути фільтр</button>
+      </section>
+
+      <section id="sorters">
+        <h2>Сортування:</h2>
+        <button id="sort-price">Сортувати за ціною</button>
+        <button id="sort-created">Сортувати за датою створення</button>
+        <button id="sort-updated">Сортувати за датою оновлення</button>
+        <button id="reset-sort">Скинути сортування</button>
+      </section>
+
+      <section id="product-list-section">
+        <p id="empty-message">
+          Наразі список товарів пустий. Додайте новий товар.
+        </p>
+        <div id="product-list"></div>
+      </section>
+
+      <button id="add-product-btn">Додати новий товар</button>
+    </main>
+
+    <div id="modal" class="modal hidden">
+      <div class="modal-content">
+        <form id="product-form">
+          <h2 id="modal-title">Новий товар</h2>
+          <input type="hidden" id="product-id" />
+          <label>Назва: <input type="text" id="product-name" required /></label>
+          <label
+            >Ціна: <input type="number" id="product-price" required min="0"
+          /></label>
+          <label
+            >Категорія:
+            <select id="product-category" required>
+              <option value="Електроніка">Електроніка</option>
+              <option value="Одяг">Одяг</option>
+              <option value="Книги">Книги</option>
+              <option value="Іграшки">Іграшки</option>
+            </select>
+          </label>
+          <label
+            >Зображення (URL): <input type="url" id="product-image" required
+          /></label>
+          <div class="modal-actions">
+            <button type="submit">Зберегти</button>
+            <button type="button" id="close-modal">Скасувати</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Toast -->
+    <div id="toast" class="toast hidden"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

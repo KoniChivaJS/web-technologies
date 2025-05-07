@@ -13,7 +13,7 @@ class Slider {
       this.currentIndex = 0;
       this.timer = null;
       this.init();
-}
+    }
   
 init() {
     this.renderPagination();

@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+  }
+  
+  .container {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    max-width: 400px;
+    width: 100%;
+  }
+  
+  .tabs {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+   .tabs button {
+    color:black;
+   }
+  
+  .tabs button {
+    flex: 1;
+    padding: 10px;
+    cursor: pointer;
+    background: #eee;
+    border: none;
+    border-bottom: 2px solid transparent;
+  }
+  
+  .tabs button.active {
+    background: white;
+    border-bottom: 2px solid #007bff;
+  }
+  
+  .form {
+    display: none;
+    flex-direction: column;
+  }
+  
+  .form.active {
+    display: flex;
+  }
+  
+  input, select {
+    margin: 8px 0;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  input.valid {
+    border: 2px solid green;
+  }
+  
+  input.invalid {
+    border: 2px solid red;
+  }
+  
+  button {
+    padding: 10px;
+    margin-top: 10px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .password-field {
+    position: relative;
+  }
+  
+  .toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+  }
+
+  .password-field input {
+    width: 100%;
+    padding-right: 40px;
+    box-sizing: border-box;
+  }
+  
+  .toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    user-select: none;
+  }
+    

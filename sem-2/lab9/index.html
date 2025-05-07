@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Auth Form</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="tabs">
+      <button id="signup-tab" class="active">Signup</button>
+      <button id="login-tab">Login</button>
+    </div>
+
+    <form id="signup-form" class="form active">
+      <h2>Create an account</h2>
+      <input type="text" id="firstName" placeholder="First Name" required />
+      <input type="text" id="lastName" placeholder="Last Name" required />
+      <input type="email" id="email" placeholder="Email" required />
+      <div class="password-field">
+        <input type="password" id="password" placeholder="Password" required />
+        <span class="toggle-password" data-target="password">🙈</span>
+      </div>
+      <div class="password-field">
+        <input type="password" id="confirmPassword" placeholder="Confirm Password" required />
+        <span class="toggle-password" data-target="confirmPassword">🙈</span>
+      </div>
+      
+      <input type="tel" id="phone" placeholder="Phone (+380...)" required />
+      <input type="date" id="dob" required />
+      <select id="sex" required>
+        <option value="">Select sex</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+      </select>
+      <select id="country" required>
+        <option value="">Select country</option>
+        <option value="Ukraine">Ukraine</option>
+        <option value="Poland">Poland</option>
+      </select>
+      <select id="city" disabled required>
+        <option value="">Select city</option>
+      </select>
+      <button type="submit">Signup</button>
+      <div id="signup-message"></div>
+    </form>
+
+    <form id="login-form" class="form">
+      <h2>Login here</h2>
+      <input type="text" id="loginUsername" placeholder="Email" required />
+      <div class="password-field">
+        <input type="password" id="loginPassword" placeholder="Password" required />
+        <span class="toggle-password" data-target="loginPassword">🙈</span>
+      </div>      
+      <label>
+        <input type="checkbox" id="rememberMe" />
+        Remember Me
+      </label>
+      <button type="submit">Login</button>
+      <div id="login-message"></div>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

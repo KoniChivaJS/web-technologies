@@ -31,8 +31,7 @@ document.getElementById('signup-tab').addEventListener('click', () => {
   
   
   const cities = {
-    Ukraine: ['Kyiv', 'Lviv', 'Odesa'],
-    Poland: ['Warsaw', 'Krakow', 'Gdansk']
+    Ukraine: ['Chenivtsi', 'Lviv', 'Kyiv'],
   };
   
   document.getElementById('country').addEventListener('change', e => {
@@ -73,7 +72,7 @@ document.getElementById('signup-tab').addEventListener('click', () => {
   
   document.getElementById('login-form').addEventListener('submit', e => {
     e.preventDefault();
-    const username = validateRequired('loginUsername');
+    const username = validateEmail('loginUsername');
     const password = validatePassword('loginPassword');
     if (username && password) {
       document.getElementById('login-message').innerText = "Logged in successfully!";
